@@ -1,0 +1,11 @@
+stages:
+  - test
+
+# job to check html
+check_html:
+  #  stage
+  stage: test
+  # command that gitlab will execute
+  script:
+    - echo "HTML and CSS files are in the repo"
+    - ls -l
